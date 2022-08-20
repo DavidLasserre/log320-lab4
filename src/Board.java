@@ -37,8 +37,8 @@ public class Board {
     }
 
     /**
-     * Fonction qui calcule tous les scores possibles pour un tic-tac-toe normal et les enregistre dans un tableau.
-     * Ainsi, au lieu de calculer le score à chaque fois, il peut être récupérer directement.
+     * Méthode qui calcule tous les scores possibles pour un tic-tac-toe normal et les enregistre dans un tableau.
+     * Ainsi, au lieu de calculer le score à chaque fois, il peut être récupéré directement.
      * Chaque case du tic-tac-toe correspond à un index ce qui évite de passer par une fonction de hashage.
      * @return un tableau contenant tous les scores possibles.
      */
