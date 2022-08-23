@@ -44,7 +44,7 @@ public class Board {
      */
     private static int[][][][][][][][][] initScoresMap() {
         int[][] board = new int[3][3];
-        int[][][][][][][][][] scoresHashMap = new int[3][3][3][3][3][3][3][3][3];
+        int[][][][][][][][][] scoresMap = new int[3][3][3][3][3][3][3][3][3];
         for (int a = 0; a < 3; a++) {
             for (int b = 0; b < 3; b++) {
                 for (int c = 0; c < 3; c++) {
@@ -63,7 +63,7 @@ public class Board {
                                             board[2][0] = g;
                                             board[2][1] = h;
                                             board[2][2] = i;
-                                            scoresHashMap[a][b][c][d][e][f][g][h][i] = evaluateBoard(board);
+                                            scoresMap[a][b][c][d][e][f][g][h][i] = evaluateBoard(board);
                                         }
                                     }
                                 }
@@ -73,7 +73,7 @@ public class Board {
                 }
             }
         }
-        return scoresHashMap;
+        return scoresMap;
     }
 
     private static int evaluateBoard(int[][] board) {
